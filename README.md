@@ -1,2 +1,2 @@
-# dakia
+# Qasid
 Postman alternative

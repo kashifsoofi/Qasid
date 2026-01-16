@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Project Path="Qasid.Android\Qasid.Android.csproj" />
+  <Project Path="Qasid.Browser\Qasid.Browser.csproj" />
+  <Project Path="Qasid.Core\Qasid.Core.csproj" />
+  <Project Path="Qasid.Desktop\Qasid.Desktop.csproj" />
+  <Project Path="Qasid.iOS\Qasid.iOS.csproj" />
+</Solution>

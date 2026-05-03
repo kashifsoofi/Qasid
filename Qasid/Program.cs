@@ -1,7 +1,7 @@
-﻿using System;
-using Avalonia;
+﻿using Avalonia;
+using System;
 
-namespace Qasid.Desktop;
+namespace Qasid;
 
 sealed class Program
 {
@@ -16,6 +16,9 @@ sealed class Program
     public static AppBuilder BuildAvaloniaApp()
         => AppBuilder.Configure<App>()
             .UsePlatformDetect()
+#if DEBUG
+            .WithDeveloperTools()
+#endif
             .WithInterFont()
             .LogToTrace();
 }

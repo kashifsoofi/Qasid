@@ -1,8 +1,4 @@
 <Solution>
-  <Folder Name="/Solution Items/">
-    <File Path="Directory.Packages.props" />
-  </Folder>
-  <Project Path="Qasid.Browser\Qasid.Browser.csproj" />
-  <Project Path="Qasid.Core\Qasid.Core.csproj" />
-  <Project Path="Qasid.Desktop\Qasid.Desktop.csproj" />
+  <Folder Name="/Solution Items/" />
+  <Project Path="Qasid/Qasid.csproj" />
 </Solution>

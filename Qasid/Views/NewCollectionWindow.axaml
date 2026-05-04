@@ -4,35 +4,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Qasid.Views.MainWindow"
-        x:DataType="vm:MainWindowViewModel"
+        x:Class="Qasid.Views.NewCollectionWindow"
+        x:DataType="vm:NewCollectionViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Qasid">
+        Title="New Collection">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
+        <vm:NewCollectionViewModel/>
     </Design.DataContext>
 
     <Grid>
-      <Panel HorizontalAlignment="Right">
-        <ComboBox x:Name="Environments"></ComboBox>
+      <Panel Grid.Row="0">
+        <Label>Name</Label>
+        <TextBox x:Name="TextBox" DataContext="{Binding Name}"></TextBox>
       </Panel>
-      
-      <StackPanel Orientation="Horizontal">
-        <ScrollViewer>
-          <ItemsControl>
-            
-          </ItemsControl>
-        </ScrollViewer>
-        
-        <TabControl>
-          
-        </TabControl>
-      </StackPanel>
-      <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-      
+      <Panel Grid.Row="0">
+        <Label>Name</Label>
+        <TextBox x:Name="Path" DataContext="{Binding Path}"></TextBox>
+        <PathIcon></PathIcon>
+      </Panel>
+      <Panel>
+        <Button x:Name="Create"></Button>
+      </Panel>
     </Grid>
 
 </Window>
